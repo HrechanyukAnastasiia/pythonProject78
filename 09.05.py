@@ -4,7 +4,7 @@ class School:
         self.name = name
         self.students = students #список студентів
         self.teachers = [] #1 завдання
-        self.clasess = [] #2 завдання
+        self.classes = [] #2 завдання
     def admit_student(self, student): #зарахування студентів
         self.students.append(student)
         print(f'{student.name} був доданий до школи {self.name}') #дописати, коли створимо клас студентів
@@ -19,9 +19,9 @@ class School:
     #1 завдання
     def add_teacher(self, teacher):
         self.teachers.append(teacher)
+    #2 завдання
     def add_class(self, class_obj):
-        self.clasess.append(class_obj)
-
+        self.classes.append(class_obj)
 class Student:
     def __init__(self, name, grade):
         self.name = name
@@ -59,8 +59,8 @@ class Teacher:
         self.classes = classes
 #друге завдання
 class Class:
-    def __init__(self, numbers):
+    def __init__(self, number):
         self.number = number
-        self.student = []
+        self.students = []
     def add_student(self, student):
         self.students.append(student)
