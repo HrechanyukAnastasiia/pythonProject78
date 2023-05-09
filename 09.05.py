@@ -8,10 +8,13 @@ class School:
         print(f'{student.name} був допущений до школи {self.name}') #дописати, коли створимо клас студентів
 
     def expel_student(self, student):
-        '''expelled_student ='''
-        pass
-
-
+        expelled_student = next(filter(lambda s: s.name == student.name
+                                                 and s.grade = student.grade, self.students), None)
+        if expelled_student is not None:
+            self.student.remove(expelled_student)
+            print(f'{expelled_student.name} був видалений з {self.name}')
+        else:
+            print(f'{student.name} не був знайдений {self.name}')
 
 class Student:
     def __init__(self, name, grade):
