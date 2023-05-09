@@ -7,6 +7,12 @@ class School:
         self.student.append(student)
         print(f'{student.name} був допущений до школи {self.name}') #дописати, коли створимо клас студентів
 
+    def expel_student(self, student):
+        '''expelled_student ='''
+        pass
+
+
+
 class Student:
     def __init__(self, name, grade):
         self.name = name
@@ -20,6 +26,7 @@ class Student:
     def __str__(self):
         return f'{self.name} - Ранг {self.grade}'
 
-
+multiplay = lambda x, y: x * y
+print(multiplay(2,5))
 
 
