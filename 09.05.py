@@ -73,11 +73,11 @@ class Class:
     def add_student(self, student):
         self.students.append(student)
 #третє завдання
-def get_average_grade(self):
-    total_grades = 0
-    for student in self.students:
-        total_grades += student.grade
-    return total_grades / len(self.students)
+    def get_average_grade(self):
+        total_grades = 0
+        for student in self.students:
+            total_grades += student.grade
+        return total_grades / len(self.students)
 #четверте завдання
 class1 = Class(1111)
 class2 = Class(1121)
@@ -88,8 +88,8 @@ class2.add_student(dima)
 class1.add_student(andriiko)
 class2.add_student(gleb)
 
-teacher_1 = Teacher("Volodya", "real life", class2)
-teacher_2 = Teacher("Anastasiia", "Астрофізика", class1)
+teacher_1 = Teacher("Volodya", 'real life', class2 )
+teacher_2 = Teacher("Anastasia", "Астрофізика", class1)
 my_school.add_teacher(teacher_1)
 my_school.add_teacher(teacher_2)
 
